@@ -1,0 +1,301 @@
+{
+    "intents":[
+        {
+        "tag" : "greeting",
+            "pattern" : [
+                "hi",
+                "hello",
+                "how are you",
+                "is anyone there",
+                "knock knock",
+                "whats up"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "goodbye",
+            "pattern" : [
+                "Thanks!" ,
+                "cya" ,
+                "bye" ,
+                "see you later", 
+                "have a good day"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "name",
+            "pattern" : [
+                "what is your name ",
+                "what should I call you ",
+                "whats your name", 
+                "your name "
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag":"social_distancing",
+            "pattern":[
+                "Why do I need to stay away from people who are coughing or sneezing",
+                "What is the reason for social distancing",
+                "Why should I maintain 6 feet distance with people",
+                "What happens if i dont maintain social distancing",
+                "How does the virus spread when someone sneezes or coughs",
+                "why is social distancing importamt",
+                "what happens if i dont maintiain social distancing",
+                " Main Disadvantage of not following Social Distancing",
+                "Demerit of not following social distancing",
+                "what are the harmful effects if you stay near a person who coughs or sneezes",
+                "what are the harmful effects if you dont maintain social distancing"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"virus_positive",
+            "pattern":[
+                "What should I do if I have been in contact with a person displaying virus symptoms",
+                "My roommate is showing virus symptoms what should I do",
+                "My neighbour is showing virus symptoms what should I do",
+                "My family memebers has virus symptoms what to do",
+                "My friend has virus symptoms what should I do",
+                "what Preautions to take if I came into contact with virus positive person",
+                "what preventive measures to be taken if I came into contact with virus positive person",
+                "what are the things to be done if I come in contact with a virus positive person"
+            ],
+            "context_set":"1"
+        },
+        {
+            "tag" : "self_isolation_quarantine",
+            "pattern" : [
+                "What is self-isolation and what does it involve for me",
+                "How should I self isolate",
+                "How should I self quarantine",
+                "Define Quarantine from aspect of virus",
+                "Define self_isolation from aspect of virus",
+                "Why is self isolation important in prevention of spread of virus",
+                "Why is quarantine important in prevention of spread of virus",
+                "Will self isolation help in not spreading the virus",
+                "Will quarantine help in not spreading the virus"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag":"virus_test",
+            "pattern":[
+                "Where can I get tested for COVID-19",
+                "List of places for test of virus",
+                "Can I get tested in hospitals for virus",
+                "Whom should I contact for testing virus",
+                "Do we need any official permission for testing of virus"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"procedure_for_testing_virus",
+            "pattern":[
+                "Where can I get tested for COVID-19",
+                "List of places for test of virus",
+                "Whom should I contact for testing virus",
+                "Do we need any official permission for testing of virus",
+                "How are people tested for COVID-19",
+                "What is the procedure for testing virus",
+                "How to check whether someone has corona virus",
+                "How are people diagonised for presence of virus",
+                "what are the medical kits and chemicals used in testing for virus",
+                "what are the equipments used for testing of virus"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"visiting_places",
+            "pattern":[
+                "I visited the hospital What are the chances of me being infected",
+                "I went outside on important work What are the chances of me getting infected",
+                "My dad went to market what are the chances of he getting affected",
+                "Are there any chances of getting affected if i go out",
+                "will i be affected if i go out to play with my friends",
+                "what are the most crowded places which is prone to virus spread",
+                "Is visiting crowded place safe "
+            ],
+            "context_set":"1"
+        },
+        {
+            "tag":"things_that_may_spread_virus",
+            "pattern":[
+                "What are the chances of virus spreading through newspapers",
+                "What are the chances of virus spreading through money",
+                "What are the chances of virus spreading through coins",
+                "What are the chances of virus spreading through notes",
+                "What are the probability virus spreading through vegetables",
+                "What are the chances of virus spreading through vegetables vendors",
+                "What are the chances of virus spreading through grocery vendors",
+                "What are the probability virus spreading through grocery things",
+                "What are the chances of virus spreading through municipality workers",
+                "What are the probability virus spreading through fruits",
+                "Does the virus trasmit from daily usage items",
+                "Does the virus spread from tissue paper",
+                "Does tthe virus spread through handkerchief",
+                "Does the virus spread through clothes",
+                "what are te chances of being attacked by gas delivery boy",
+                "what are the chances of being attacked by food delivery guy",
+                "what are the chances of spreading by pizza delivery boy",
+                "what are te chances of being attacked by swiggy delivery boy",
+                "what are the probability of spreading by zomato delivery boy",
+                "are cab drivers threat to spread of the virus",
+                "are ola cab drivers threat to spread of the virus",
+                "are uber cab drivers threat to spread of the virus"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"Prevention",
+            "pattern":[
+                "How to prevent myself from being affected by Corona",
+                "what are the measures to be taken to prevent from virus",
+                "what is to be done to be in safe zone of virus",
+                "How to be safe if i stay in hotspot zone of the virus",
+                "What are the steps to be taken if i am in non hotspot zone of virus",
+                "what kind of awareness must be spread to prevent the attack of virus",
+                "what to if I get attcked by virus",
+                "what kind of care must be taken to be not attacked by virus"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"family_members",
+            "pattern":[
+                "How to protect family members from being affected",
+                "How to protect infant babies",
+                "How to protect pregnanat ladies",
+                "How to protect aged people",
+                "what are the steps to be taken to protect people who have low immunity",
+                "how to protect children aged between 6-14from virus",
+                "How to protet aged people who have diabetis",
+                "How to protect aged people who are affected with heartattack",
+                "what are the measures to be taken to protect asthama patients,especially aged people"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"mask_cloth",
+            "pattern":[
+                "Why should I  wear mask",
+                "Should  I wear mask", 
+                "who all should  wear mask",
+                "when should i wear mask",
+                "How to wear mask",
+                "Is wearing mask safe",
+                "what kind of masks to be worn",
+                "are masks to be sanitized in regular interval of time",
+                "are masks to be washed every now and then",
+                "Why should some kind of masks be sanitized every now and then",
+                "which is the best mask tobe worn",
+                "what are the types of masks available in the market",
+                "wearing mask or wearing a cloth to face, which is safe for virus",
+                "what is the alternative for wearing mask",
+                "Should cloth face coverings be washed or otherwise cleaned regularly",
+                "How regularly face coverings must be washed or otherwise cleaned regularly"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"6_feet_distance",
+            "pattern":[
+                "Do I still need to stay at least 6 feet away from people if wearing a cloth face covering",
+                "only wering mask makes me safe from virus",
+                "what are the additional steps to be taken after wearing mask",
+                "what is the minimal effort tobe done after wearing in crowded places",
+                "wearinfg mask alone is the remedy to be safe from virus",
+                "how much distance to be maintained to be safe after wearing mask",
+                " Main Disadvantage of not following Social Distancing",
+                "why should i main 6 feet distance after wearing the mask",
+                "how does maintaining 6 feet distance help us",
+                "what is the other protocol to be followed after wearing mask",
+                "protocols to be followed from being safe from virus"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"object_transmission",
+            "pattern":[
+                "I am a train ticket controller Is it dangerous to constantly take objects from people",
+                "I am a receptionist. Is it dangerous to constantly take objects from people",
+                "I work at airport desk Is it dangerous to constantly take objects from people",
+                "is there any possibility of spreading virus through touching tickets",
+                "is there any possibility of spreading virus through touching passport",
+                "is there any possibility of spreading virus through touching boarding pass",
+                "does virus transmit through baggage",
+                "does virus transmit through luggage",
+                "I am grocery store vendor is it dangerous to constatntly take objects from people",
+                "what are the steps to be taken to be taken after touching objects from different people",
+                "is touching thins safe from outside",
+                "what measures to be done after bringing groceries items"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"wash",
+            "pattern":[
+                "How should I wash my hands",
+                "best way to stay clean",
+                "best way to wash hands",
+                "minimal effort to be done from not being attacked from virus",
+                "what is the basic care to be taken after coming from outside",
+                "why should i wash hands",
+                "which is the best soap to wash hands",
+                "can sanitizer be used instead of soap",
+                "does  use of sanitizer make us safe",
+                "what part of hands and arms must be washed",
+                "what is the procedure to wash hands",
+                "what are the ways to sanitize our hands",
+                "what kind of soap must be used to wash hands",
+                "what is the alternative if you dint have a soap",
+                "What to do when you don’t have hand sanitiser",
+                "is hand sanitizer only the best way to prevent from virus",
+                "what are the other ways to be safe other than hand sanitizer",
+                "How can hand sanitizer be used"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"hospital",
+            "pattern":[
+                "Is it safe to go to hospitals",
+                "are hospitals prone to virus",
+                "will get infected if i go to hospital",
+                "is there any issue if i go to hospital",
+                "is it dangerous to go to hospital",
+                "what is the level of threat if i go to hospital",
+                "what are the measures to be taken if i go to hospital"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"own_hand_sanitizer",
+            "pattern":[
+                "Can I make my own hand sanitizer",
+                "can we manufacture hand sanitizer at home",
+                "can hand sanitizers be made without expert guidance",
+                "any studies for making hand sanitizer",
+                "are there any chemical concentraion safties must be taken care of while preparing hand sanitizers",
+                "is there any chance of chemical accident  or explosion if hand sanitizers are made at home",
+                "is it safe to make own hand sanitizer",
+                "is it effective if we make own hand sanitizer"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"Precaution",
+            "pattern":[
+                " What are the precautions to be taken",
+                "What are the steps to be taken to be safe from virus",
+                "How can we be safe from virus",
+                "what are the safety measures to be followed",
+                "how can we reduce the level of threat ",
+                "what are the preventive measures to be followed"
+            ],
+            "context_set":""
+        }
+       
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "intents":[
+        {
+            "tag" : "greeting",
+            "pattern" : [
+                "hi",
+                "hello",
+                "how are you",
+                "is anyone there",
+                "knock knock",
+                "whats up"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "goodbye",
+            "pattern" : [
+                "Thanks!" ,
+                "cya" ,
+                "bye" ,
+                "see you later", 
+                "have a good day"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "name",
+            "pattern" : [
+                "what is your name ",
+                "what should I call you ",
+                "whats your name", 
+                "your name "
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "SARS",
+            "pattern" : [
+                "Is virus the same as SARS", 
+                "Whats the connection between virus and SARS", 
+                "difference between virus and SARS", 
+                "Is virus derived from SARS"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "discovery",
+            "pattern" : [
+                "Is the virus disease new", 
+                "When did virus get discovered", 
+                "Where did virus come from", 
+                "details of virus discovery"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "virus",
+            "pattern" : ["What is virus ", 
+                "Details on virus", 
+                "what is the virus that is causing this", 
+                "virus and its nature"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "name_virus",
+            "pattern" : [" virus meaning", 
+                "What is the official name of virus ", 
+                "what does the word virus mean"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "blood",
+            "pattern" : [
+                "Can i still donate blood during this pandemic", 
+                " Is it safe to donate blood now", 
+                "Can I donate blood", 
+                "is donating blood safe during virus"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "scanners",
+            "pattern" : [
+                "How effective are thermal scanners in detecting people infected with the new virus", 
+                "Can thermal scanners detect coronavirus in people with no symptoms", 
+                "Is thermal scanners good at decting virus", 
+                "can the gun like equipments detect virus", 
+                "Is the gun like thing held against head good at detecting virus"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "services",
+            "pattern" : [
+                "Services available now", 
+                "What are the services available during lockdown", 
+                "Shops and others open during lockdown", 
+                "What are the essential things open during virus lockdown"
+            ],
+            "context_set" : ""
+        }
+    ]
+}

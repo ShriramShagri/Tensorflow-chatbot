@@ -1,0 +1,131 @@
+{
+    "intents":[
+        {
+            "tag" : "greeting",
+            "pattern" : [
+                "hi",
+                "hello",
+                "how are you",
+                "is anyone there",
+                "knock knock",
+                "whats up"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "goodbye",
+            "pattern" : [
+                "Thanks!" ,
+                "cya" ,
+                "bye" ,
+                "see you later", 
+                "have a good day"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "name",
+            "pattern" : [
+                "what is your name ",
+                "what should I call you ",
+                "whats your name", 
+                "your name "
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "food",
+            "pattern" : [
+                "can I catch the virus from food", 
+                "can I get sick with virus if it is on food", 
+                "can virus spread through food", 
+                "is food a means for virus spread"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "temperature",
+            "pattern" : [
+                " Does higher temperature prevent virus", 
+                "Can I catch virus if I live in a hot area", 
+                "Is virus effective in higher temperatures", 
+                "Does hot climate affect the virus in any way", 
+                "Does high temperature affect the virus in any way", 
+                " In what areas can the virus spread?", 
+                "Does virus spread in all areas", 
+                "does virus spread in all types of climate"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "mosquitos",
+            "pattern" : [
+                "Can the virus be transmitted through mosquitoes", 
+                "Can mosquitos spead virus", 
+                "Is the virus spread by mosquito like maleria", 
+                "Can mosquito bites spread virus", 
+                "will the the virus transmit through mosquito bites"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "infected_animals",
+            "pattern" : [
+                " Do animals have virus", 
+                "Are any animals other than humans affected by virus"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "pets",
+            "pattern" : [ 
+                "Can animals carry the virus that causes disease on their skin or fur", 
+                "Do pets transmit virus", 
+                " Should I avoid contact with pets or other animals if I am sick with virus"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "air",
+            "pattern" : [
+                " Is virus airborne", 
+                "Can virus spread through air", 
+                "Is the virus spread by air"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "surface",
+            "pattern" : [
+                "How long does the disease last on the surface", 
+                " How many hours virus lives on surface", 
+                "How long does the coronavirus survive on smooth surfaces and materials can I get infected like this", 
+                "what is the duration of virus resting on a surface", 
+                "How long will it take to remove infection from a surface", 
+                "How much time for me to get not infected by surface touched by others"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "spread",
+            "pattern" : [
+                "How does virus spread", 
+                "means of virus spread", 
+                "how do people get infected by virus", 
+                "How may I get virus",
+                "How is the virus spreading so quickly"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "myself",
+            "pattern" : [
+                "How likely am I to catch virus", 
+                " What are the chances of me catching the virus",
+                "will I get virus", 
+                "what is the probability that i have virus"
+            ],
+            "context_set" : ""
+        }
+    ]
+}

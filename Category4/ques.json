@@ -1,0 +1,96 @@
+{
+    "intents":[
+        {
+        "tag" : "greeting",
+            "pattern" : [
+                "hi",
+                "hello",
+                "how are you",
+                "is anyone there",
+                "knock knock",
+                "whats up"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "goodbye",
+            "pattern" : [
+                "Thanks!" ,
+                "cya" ,
+                "bye" ,
+                "see you later", 
+                "have a good day"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "name",
+            "pattern" : [
+                "what is your name ",
+                "what should I call you ",
+                "whats your name", 
+                "your name "
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag":"medcine_for_virus",
+            "pattern":[
+                "Is there a vaccine, drug or treatment for virus",
+                " Can virus be cured",
+                "is there any cure for virus",
+                "How can virus be cured",
+                "did scientists find any antitode for this virus",
+                "any country found the end the way to end this pandemic",
+                "how can this pandemic be stopped ",
+                "any clue to stop the spread of virus",
+                "any drug to stop the growth of the virus",
+                "did any field of biology find the cure for virus",
+                "Is there a vaccine","What are the treatments for virus"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"natural_drugs",
+            "pattern":[
+                "Can turmeric cure virus",
+                "Can alcohol cure virus",
+                "Can any home remedies cure virus",
+                "any ayurvedic drug to cure virus",
+                "any homeopathy  drug to cure virus",
+                "any natural medicine to virus",
+                "does indian traditional medicines help to cure virus",
+                "any sacred tree leaves stop the virus",
+                "any sacred tree twigs stop the virus",
+                "any sacred tree barks stop the virus",
+                "does tulsi cure the virus",
+                "Which home remedies can cure  virus"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"vaccine",
+            "pattern":[
+                "Do vaccines against pneumonia protect you against the new virus",
+                "does anti malarian drug protect us against the virus",
+                "does hydroxy chloro quienine help us from virus",
+                "any chemical till date help us from virus",
+                "Can vaccines prevent coronavirus",
+                "which is the vaccine cure of virus",
+                "will spread of virus stop with the usage of vaccine"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"against_virus",
+            "pattern":[
+                "Is hand sanitizer effective against COVID-19",
+                "is mask efficient againt virus",
+                "how can we fight against the virus"
+            ],
+            "context_set":""
+        }
+
+       
+    ]
+}

@@ -1,0 +1,127 @@
+{
+    "intents":[
+        {
+            "tag" : "greeting",
+            "pattern" : [
+                "hi",
+                "hello",
+                "how are you",
+                "is anyone there",
+                "knock knock",
+                "whats up"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "goodbye",
+            "pattern" : [
+                "Thanks!" ,
+                "cya" ,
+                "bye" ,
+                "see you later", 
+                "have a good day"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "name",
+            "pattern" : [
+                "what is your name ",
+                "what should I call you ",
+                "whats your name", 
+                "your name "
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "symptoms",
+            "pattern" : [
+                "what are the symptoms of virus", 
+                "symptoms of the disease", 
+                "What happens if somebody gets virus", 
+                "what are the signs that one has virus", 
+                "what are the characteristics of the virus"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "symptoms_spread_from_healthy",
+            "pattern" : [
+                "can virus be caught from a person who has no symptoms ",  
+                "can I catch the virus from someone with no symptoms ", 
+                "will virus spread from someone without illness ", 
+                "what are the chances of spreading from a healthy person ", 
+                "can I catch the virus from someone who is healthy "
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "incubation",
+            "pattern" : [
+                "what is the incubation period of virus",
+                "how long will it take after the exposure to virus for it to show symptoms", 
+                "what is the incubation period of virus", 
+                "how long will it take for the symptoms to show up ", 
+                "how much time for the virus to show symptoms "
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "old_people",
+            "pattern" : [
+                "does the new virus affect older people" , 
+                "is virus bad for old age people " ,
+                "who are at higher risks of virus attack " ,
+                "is virus more risky for older people " ,
+                "who is at higher risk of getting this disease" , 
+                "i have diabetes, am I risk of getting virus", 
+                "what are the risks of getting disease for a heart patient", 
+                "can children get virus"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "death_rate",
+            "pattern" : [
+                "Will i die if i get virus", 
+                "How dangerous is virus", 
+                "Should I be scared of being infected by virus", 
+                "what is the survival rate of virus", 
+                "what is the recovery rate of the virus", 
+                "what is the percentage of people surviving virus", 
+                "Is virus dangerous", 
+                "How likely is that i will die if i get virus"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "check_corona",
+            "pattern" : [
+                "How do I know if I have virus ", 
+                "I have cough. Do I have virus", 
+                "I am suffering from fever. Do I have virus", 
+                "I am suffering. is it that I have virus",
+                "I have . is it that I have virus",
+                "I have common cold. Do I have virus"
+            ],
+            "context_set" : "1"
+        },
+        {
+            "tag" : "bp",
+            "pattern" : [
+                "I have high blood pressure am I at risk", 
+                "What to do if I have high bp"
+            ],
+            "context_set" : ""
+        },
+        {
+            "tag" : "pregnant",
+            "pattern" : [
+                "Are pregnant women more at risk", 
+                "Care taken for pregnant women", 
+                "are pregnants weak against virus than normal people"
+            ],
+            "context_set" : ""
+        }
+    ]
+}
