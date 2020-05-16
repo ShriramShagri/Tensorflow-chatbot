@@ -199,41 +199,41 @@ class Chatbot():
 
 app = Flask(__name__)
 category = {'en': [
-    {"category_id":1, "category_name":"Symptoms"},
-    {"category_id":2, "category_name":"Modes of disease spread"},
-    {"category_id":3, "category_name":"Precautions"},
-    {"category_id":4, "category_name":"Cures"},
-    {"category_id":5, "category_name":"About Corona"}
+    {"category_id":1, "category_name":"Symptoms", "category_url": 'https://hotemoji.com/images/emoji/4/tgkksjy74i44.png'},
+    {"category_id":2, "category_name":"Modes of disease spread", "category_url":'https://hotemoji.com/images/emoji/e/1gqjxj8a6hhe.png'},
+    {"category_id":3, "category_name":"Precautions", "category_url":'https://latestchika.com/wp-content/uploads/2020/03/handwash-1068x620.png'},
+    {"category_id":4, "category_name":"Cures", "category_url" : 'https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/pill.png'},
+    {"category_id":5, "category_name":"About Corona", "category_url": 'https://www.statnews.com/wp-content/uploads/2020/02/Coronavirus-CDC-768x432.jpg'}
 ],'kn': [
-    {"category_id":1, "category_name":"ಲಕ್ಷಣಗಳು"},
-    {"category_id":2, "category_name":"ರೋಗ ಹರಡುವ ವಿಧಾನಗಳು"},
-    {"category_id":3, "category_name":"ಮುನ್ನಚ್ಚರಿಕೆಗಳು"},
-    {"category_id":4, "category_name":"ರೋಗಪರಿಹಾರ"},
-    {"category_id":5, "category_name":"ಕರೋನಾ ಬಗ್ಗೆ"}
+    {"category_id":1, "category_name":"ಲಕ್ಷಣಗಳು", "category_url": 'https://hotemoji.com/images/emoji/4/tgkksjy74i44.png'},
+    {"category_id":2, "category_name":"ರೋಗ ಹರಡುವ ವಿಧಾನಗಳು","category_url":'https://hotemoji.com/images/emoji/e/1gqjxj8a6hhe.png'},
+    {"category_id":3, "category_name":"ಮುನ್ನಚ್ಚರಿಕೆಗಳು", "category_url":'https://latestchika.com/wp-content/uploads/2020/03/handwash-1068x620.png'},
+    {"category_id":4, "category_name":"ರೋಗಪರಿಹಾರ", "category_url" : 'https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/pill.png'},
+    {"category_id":5, "category_name":"ಕರೋನಾ ಬಗ್ಗೆ", "category_url": 'https://www.statnews.com/wp-content/uploads/2020/02/Coronavirus-CDC-768x432.jpg'}
 ],'ta': [
-    {"category_id":1, "category_name":"அம்சங்கள்"},
-    {"category_id":2, "category_name":"நோய் பரவல் முறைகள்"},
-    {"category_id":3, "category_name":"முன்னறிவிப்புகள்"},
-    {"category_id":4, "category_name":"நோய் கண்டறிதல்"},
-    {"category_id":5, "category_name":"கொரோனா பற்றி"}
+    {"category_id":1, "category_name":"அம்சங்கள்", "category_url": 'https://hotemoji.com/images/emoji/4/tgkksjy74i44.png'},
+    {"category_id":2, "category_name":"நோய் பரவல் முறைகள்","category_url":'https://hotemoji.com/images/emoji/e/1gqjxj8a6hhe.png'},
+    {"category_id":3, "category_name":"முன்னறிவிப்புகள்", "category_url":'https://latestchika.com/wp-content/uploads/2020/03/handwash-1068x620.png'},
+    {"category_id":4, "category_name":"நோய் கண்டறிதல்", "category_url" : 'https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/pill.png'},
+    {"category_id":5, "category_name":"கொரோனா பற்றி", "category_url": 'https://www.statnews.com/wp-content/uploads/2020/02/Coronavirus-CDC-768x432.jpg'}
 ],'te': [
-    {"category_id":1, "category_name":"లక్షణాలు"},
-    {"category_id":2, "category_name":"వ్యాధి వ్యాప్తి యొక్క రీతులు"},
-    {"category_id":3, "category_name":"భవిష్యత్"},
-    {"category_id":4, "category_name":"వ్యాధి ఉపశమనం"},
-    {"category_id":5, "category_name":"కరోనా గురించి"}
+    {"category_id":1, "category_name":"లక్షణాలు", "category_url": 'https://hotemoji.com/images/emoji/4/tgkksjy74i44.png'},
+    {"category_id":2, "category_name":"వ్యాధి వ్యాప్తి యొక్క రీతులు", "category_url":'https://hotemoji.com/images/emoji/e/1gqjxj8a6hhe.png'},
+    {"category_id":3, "category_name":"భవిష్యత్", "category_url":'https://latestchika.com/wp-content/uploads/2020/03/handwash-1068x620.png'},
+    {"category_id":4, "category_name":"వ్యాధి ఉపశమనం", "category_url" : 'https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/pill.png'},
+    {"category_id":5, "category_name":"కరోనా గురించి", "category_url": 'https://www.statnews.com/wp-content/uploads/2020/02/Coronavirus-CDC-768x432.jpg'}
 ],'ml': [
-    {"category_id":1, "category_name":"സവിശേഷതകൾ"},
-    {"category_id":2, "category_name":"രോഗം പടരുന്ന രീതി"},
-    {"category_id":3, "category_name":"മുൻകരുതലുകൾ"},
-    {"category_id":4, "category_name":"സുഖപ്പെടുത്തുന്നു"},
-    {"category_id":5, "category_name":"കൊറോണയെക്കുറിച്ച്"}
+    {"category_id":1, "category_name":"സവിശേഷതകൾ", "category_url": 'https://hotemoji.com/images/emoji/4/tgkksjy74i44.png'},
+    {"category_id":2, "category_name":"രോഗം പടരുന്ന രീതി", "category_url":'https://hotemoji.com/images/emoji/e/1gqjxj8a6hhe.png'},
+    {"category_id":3, "category_name":"മുൻകരുതലുകൾ", "category_url":'https://latestchika.com/wp-content/uploads/2020/03/handwash-1068x620.png'},
+    {"category_id":4, "category_name":"സുഖപ്പെടുത്തുന്നു", "category_url" : 'https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/pill.png'},
+    {"category_id":5, "category_name":"കൊറോണയെക്കുറിച്ച്", "category_url": 'https://www.statnews.com/wp-content/uploads/2020/02/Coronavirus-CDC-768x432.jpg'}
 ],'hi' : [
-    {"category_id":1, "category_name":"विशेषताएं"},
-    {"category_id":2, "category_name":"रोग फैलने के तरीके"},
-    {"category_id":3, "category_name":"एहतियात"},
-    {"category_id":4, "category_name":"इलाज"},
-    {"category_id":5, "category_name":"कोरोना के बारे में"}
+    {"category_id":1, "category_name":"विशेषताएं", "category_url": 'https://hotemoji.com/images/emoji/4/tgkksjy74i44.png'},
+    {"category_id":2, "category_name":"रोग फैलने के तरीके", "category_url":'https://hotemoji.com/images/emoji/e/1gqjxj8a6hhe.png'},
+    {"category_id":3, "category_name":"एहतियात", "category_url":'https://latestchika.com/wp-content/uploads/2020/03/handwash-1068x620.png'},
+    {"category_id":4, "category_name":"इलाज", "category_url" : 'https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/pill.png'},
+    {"category_id":5, "category_name":"कोरोना के बारे में", "category_url": 'https://www.statnews.com/wp-content/uploads/2020/02/Coronavirus-CDC-768x432.jpg'}
 ]}
 language = [
     {'lang_code': 'en', 'lang_name':'English', 'lang_image' : 'https://charbase.com/images/glyph/65'},
