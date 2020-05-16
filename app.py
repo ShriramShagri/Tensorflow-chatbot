@@ -236,12 +236,12 @@ category = {'en': [
     {"category_id":5, "category_name":"कोरोना के बारे में"}
 ]}
 language = [
-    {'lang_code': 'en', 'lang_name':'English'},
-    {'lang_code': 'kn', 'lang_name':'Kannada'},
-    {'lang_code': 'te', 'lang_name':'Telugu'},
-    {'lang_code': 'ta', 'lang_name':'Tamil'},
-    {'lang_code': 'ml', 'lang_name':'Malayalam'},
-    {'lang_code': 'hi', 'lang_name':'Hindi'}
+    {'lang_code': 'en', 'lang_name':'English', 'lang_image' : 'https://charbase.com/images/glyph/65'},
+    {'lang_code': 'kn', 'lang_name':'Kannada', 'lang_image' :'https://charbase.com/images/glyph/3221'},
+    {'lang_code': 'te', 'lang_name':'Telugu', 'lang_image' :'https://charbase.com/images/glyph/3093'},
+    {'lang_code': 'ta', 'lang_name':'Tamil', 'lang_image' :'https://charbase.com/images/glyph/2965'},
+    {'lang_code': 'ml', 'lang_name':'Malayalam', 'lang_image' :'https://charbase.com/images/glyph/3349'},
+    {'lang_code': 'hi', 'lang_name':'Hindi', 'lang_image' : 'https://charbase.com/images/glyph/2325'}
 ]
 
 # def token_required(f):
