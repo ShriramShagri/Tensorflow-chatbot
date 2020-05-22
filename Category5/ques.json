@@ -4,22 +4,35 @@
             "tag" : "greeting",
             "pattern" : [
                 "hi",
+                "Hey whats up",
                 "hello",
-                "how are you",
+                "how you",
                 "is anyone there",
                 "knock knock",
-                "whats up"
+                "whats up",
+                "Hey",
+                "Good Morning",
+                "Good afternoon",
+                "Good Evening"
+                 
             ],
             "context_set" : ""
         },
         {
             "tag" : "goodbye",
             "pattern" : [
-                "Thanks!" ,
-                "cya" ,
+                "Thanks" ,
+                "Catch you soon" ,
                 "bye" ,
-                "see you later", 
-                "have a good day"
+                "see you later",
+                "see you next time" ,
+                "have good day",
+                "Take Care",
+                "Talk to you later",
+                "I gotta go",
+                "It was pleasure speaking to you",
+                "It was glad speaking to you",
+                "Bye for now"  
             ],
             "context_set" : ""
         },
@@ -29,15 +42,22 @@
                 "what is your name ",
                 "what should I call you ",
                 "whats your name", 
-                "your name "
+                "your name ",
+                "Your good name please",
+                "Who you",
+                "May I know your name",
+                "What you named",
+                "What do you call yourself",
+                "How can call you",
+                "Who is speaking"
             ],
             "context_set" : ""
         },
         {
             "tag" : "SARS",
             "pattern" : [
-                "Is virus the same as SARS", 
-                "Whats the connection between virus and SARS", 
+                "Is virus same as SARS", 
+                "Whats connection between virus and SARS", 
                 "difference between virus and SARS", 
                 "Is virus derived from SARS"
             ],
@@ -46,7 +66,7 @@
         {
             "tag" : "discovery",
             "pattern" : [
-                "Is the virus disease new", 
+                "Is virus disease new", 
                 "When did virus get discovered", 
                 "Where did virus come from", 
                 "details of virus discovery"
@@ -57,7 +77,7 @@
             "tag" : "virus",
             "pattern" : ["What is virus ", 
                 "Details on virus", 
-                "what is the virus that is causing this", 
+                "what is virus that is causing this", 
                 "virus and its nature"
             ],
             "context_set" : ""
@@ -65,8 +85,8 @@
         {
             "tag" : "name_virus",
             "pattern" : [" virus meaning", 
-                "What is the official name of virus ", 
-                "what does the word virus mean"
+                "What is official name of virus ", 
+                "what does word virus mean"
             ],
             "context_set" : ""
         },
@@ -83,11 +103,11 @@
         {
             "tag" : "scanners",
             "pattern" : [
-                "How effective are thermal scanners in detecting people infected with the new virus", 
+                "How effective thermal scanners in detecting people infected with new virus", 
                 "Can thermal scanners detect coronavirus in people with no symptoms", 
                 "Is thermal scanners good at decting virus", 
-                "can the gun like equipments detect virus", 
-                "Is the gun like thing held against head good at detecting virus"
+                "can gun like equipments detect virus", 
+                "Is gun like thing held against head good at detecting virus"
             ],
             "context_set" : ""
         },
@@ -95,9 +115,9 @@
             "tag" : "services",
             "pattern" : [
                 "Services available now", 
-                "What are the services available during lockdown", 
+                "What services available during lockdown", 
                 "Shops and others open during lockdown", 
-                "What are the essential things open during virus lockdown"
+                "What essential things open during virus lockdown"
             ],
             "context_set" : ""
         }

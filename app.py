@@ -27,6 +27,7 @@ class Chatbot():
             self.data = json.load(file)
         
         try:
+            r
             with open(f"Category{self.category}/data.pickle","rb") as f:
                 self.words, self.labels, self.training, self.output = pickle.load(f)
 
@@ -82,7 +83,6 @@ class Chatbot():
 
         tensorflow.reset_default_graph()
 
-        # Change number of nodes in hidden layers
         if self.category == 1:
             net = tflearn.input_data(shape=[None, len(self.training[0])])
             net = tflearn.fully_connected(net, 50)
@@ -122,8 +122,8 @@ class Chatbot():
 
         elif self.category == 4:
             net = tflearn.input_data(shape=[None, len(self.training[0])])
-            net = tflearn.fully_connected(net, 40)
-            net = tflearn.fully_connected(net, 40)
+            net = tflearn.fully_connected(net, 50)
+            net = tflearn.fully_connected(net, 50)
             net = tflearn.fully_connected(net, len(self.output[0]),activation="softmax")
             net = tflearn.regression(net)
 
@@ -143,8 +143,6 @@ class Chatbot():
 
             # self.model.fit(self.training, self.output, n_epoch=500, batch_size=8, show_metric=True)
             # self.model.save(f"./Category{self.category}/chatbot.tflearn")
-
-
 
         # try:
         self.model.load(f"./Category{self.category}/chatbot.tflearn")
@@ -198,6 +196,7 @@ class Chatbot():
 
 
 app = Flask(__name__)
+
 category = {'en': [
     {"category_id":1, "category_name":"Symptoms", "category_url": 'https://hotemoji.com/images/emoji/4/tgkksjy74i44.png'},
     {"category_id":2, "category_name":"Modes of disease spread", "category_url":'https://hotemoji.com/images/emoji/e/1gqjxj8a6hhe.png'},
@@ -236,42 +235,57 @@ category = {'en': [
     {"category_id":5, "category_name":"कोरोना के बारे में", "category_url": 'https://www.statnews.com/wp-content/uploads/2020/02/Coronavirus-CDC-768x432.jpg'}
 ]}
 language = [
-    {'lang_code': 'en', 'lang_name':'English', 'lang_image' : 'https://charbase.com/images/glyph/65'},
-    {'lang_code': 'kn', 'lang_name':'Kannada', 'lang_image' :'https://charbase.com/images/glyph/3221'},
-    {'lang_code': 'te', 'lang_name':'Telugu', 'lang_image' :'https://charbase.com/images/glyph/3093'},
-    {'lang_code': 'ta', 'lang_name':'Tamil', 'lang_image' :'https://charbase.com/images/glyph/2965'},
-    {'lang_code': 'ml', 'lang_name':'Malayalam', 'lang_image' :'https://charbase.com/images/glyph/3349'},
-    {'lang_code': 'hi', 'lang_name':'Hindi', 'lang_image' : 'https://charbase.com/images/glyph/2325'}
+    {'lang_code': 'en', 'lang_name':'English', 'lang_url' : 'https://charbase.com/images/glyph/65'},
+    {'lang_code': 'kn', 'lang_name':'ಕನ್ನಡ', 'lang_url' :'https://charbase.com/images/glyph/3221'},
+    {'lang_code': 'te', 'lang_name':'తెలుగు', 'lang_url' :'https://charbase.com/images/glyph/3093'},
+    {'lang_code': 'ta', 'lang_name':'தமிழ்', 'lang_url' :'https://charbase.com/images/glyph/2965'},
+    {'lang_code': 'ml', 'lang_name':'മലയാളം', 'lang_url' :'https://charbase.com/images/glyph/3349'},
+    {'lang_code': 'hi', 'lang_name':'हिन्दी', 'lang_url' : 'https://charbase.com/images/glyph/2325'}
 ]
 
-# def token_required(f):
-#     @wraps(f)
-#     def decorated(*args, **kwargs):
-#         token = request.args.get('token')
-# 
-#         if not token:
-#             return jsonify({'msg': 'Token missing'}), 403
-# 
-#         try:
-#             data = jwt.decode(token, app.config['SECRET_KEY'])
-#         except:
-#             return jsonify({'msg': 'Token invalid'}), 403
-# 
-#         return f(*args, **kwargs)
-#     return decorated
+def string_fixes(st, ch):
+    st = st.lower()
 
+    word_l = ['?', '.', '`', "'"]
+    for i in word_l:
+        st = st.replace(i ,"")    
 
+    word_l = ["corona virus", "corona", 'coronavirus', 'coronavirus', 'covid-19', 'covid 19', 'covid', 'karuna', 'covid19', 'korona']
+    for i in word_l:
+        st = st.replace(i ,"virus")
 
-# @app.route('/login', methods = ['GET'])
-# def login():
-#     auth = request.authorization
+    word_l = [' a ', ' an ', ' the ', ' am ', ' are ']
+    for i in word_l:
+        st = st.replace(i ," ")
 
-#     if auth and auth.password == '12345':
-#         token = jwt.encode({'user' : auth.username}, app.config['SECRET_KEY'])
+    if ch is 1:
+        word_l = ["cold", "common cold", "sneezing" ,"astama", "high fever", "mild fever", "fever", "headache", "respiratory problem", "respiratory problems", "respiratory"]
+        for i in word_l:
+            st = st.replace(i, "disorder")
 
-#         return jsonify({'token': token.decode('UTF-8'), "category":category})
+    if ch is 3:
+        word_l = ["delivery boy", "delivery guy", 'delivery person']
+        for i in word_l:
+            st = st.replace(i, "boy")
+        word_l = ["newspapers", "money", "coins" ,"notes", "note", "coin", "vegetables vendors", "vegetables", "grocery vendors", "grocery things", "municipality workers", "fruits", "daily usage items", "daily items", "tissue paper", "newspaper", "news paper", "paper", "tissue"
+        , "handkerchief", "clothes", "gas boy", "food boy", "pizza boy", "swiggy boy", "zomato boy", "drivers", "cab", "ola", "uber", "grocery"]
+        for i in word_l:
+            st = st.replace(i, "things_that_may_spread_virus")
+        word_l = ["pregnant ladies", "pregnant", 'ladies', "aged people", "old people", "family members", "infant babies", "infants", "babies", "baby", "children"]
+        for i in word_l:
+            st = st.replace(i, "family_members")
+        word_l = ["train ticket controller", "luggage", "baggage", 'tickets', 'ticket', 'bus', 'train', 'passport', 'boarding pass', 'grocery store vendor', 'vendor', 'shop keeper', 'shopkeeper', 'receptionist']
+        for i in word_l:
+            st = st.replace(i, "stuff")
 
-#     return make_response('Could not Verify', 401, {'WWW-Authenticate' : 'Basic realm="Login required"'})
+    if ch is 4:
+        word_l = ["turmeric", "alcohol", "booze", "wine", "any home remedies", "home remedies", "ayurvedic drug", "ayurvedic tablets", "ayurvedic syrup", "homeopathy drug", "homeopathy", "natural medicine"
+        , "medicine", "indian traditional", "leaves", "twigs", "barks", "sacred tree", "tulsi", "home remedies"]
+        for i in word_l:
+            st = st.replace(i, "drug")
+
+    return st
+
 
 @app.route('/category', methods = ['GET'])
 def category_list():
@@ -298,37 +312,32 @@ def language_list():
 
 
 @app.route('/<int:ch>', methods=['POST'])
-# @token_required
 def send_string(ch):
     try:
         some_json = request.get_json()
+
         st = some_json["ques"]
         lang = some_json['lang']
-        word_l = ["corona virus", "corona", 'Corona virus', 'Corona', 'coronavirus','coronavirus', 'COVID-19', 'COVID19', 'COVID 19', 'covid', 'karuna', 'covid19', 'korona']
-        for i in word_l:
-            st = st.replace(i ,"virus")
-        st = st.replace("?", "")
-        st = st.replace(".", "")
-        st = st.replace('`', "")
-        st = st.replace("'", "")
 
     except:
         reply = {"Error": "Json format error"}
-        return jsonify(reply), 400   
+        return jsonify(reply), 400 
+
     # try:
     if ch in list(range(1,6)):
+        string = string_fixes(st, ch)
         chatbot = Chatbot(ch)
-        reply = chatbot.prediction(st.lower(), lang)
+        reply = chatbot.prediction(string, lang)
         return jsonify(reply), 200
+
     else:
         reply = {"Error": "Invalid category"}
         return jsonify(reply), 501
+
     # except:
     #     reply = {"Error": "Internal Server Error, Please contact devs"}
     #     return jsonify(reply), 500
-
-
-        
+     
 
 if __name__ == "__main__":
     app.run(debug=True)
